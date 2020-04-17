@@ -17,7 +17,7 @@ if(isset($_POST['connexion'])){
             $userInfo = $reqUser->fetch();
             $_SESSION['id'] = $userInfo['id'];
             $_SESSION['username'] = $userInfo['username'];
-            header("Location: profil.php?id=".$_SESSION[''])
+            header("Location: accueil.php?id=".$_SESSION['id']);
         }else{
             $erreur = "Mauvais pseudo ou mot de passe";
         }
